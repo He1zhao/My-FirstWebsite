@@ -9,13 +9,85 @@
     
     <title>Document</title>
 </head>
+<!-- body里的标头 -->
 <body>
-    <h1>我爱妈妈么么哒</h1>
+    <label for="studentName">studentName</label>
+    <input type="text" id="studentName" value="Hedy" placeholder="type your name">
+<br><br>
+    <label for="studentEmail">studentEmail</label>
+    <input type="email" value="Hedy240991904">
+<br><br>
+<!-- this heading colour-->
+    <h1 style="color: aqua;">我爱妈妈么么哒</h1>
+<!--all page colour-->
+    <style>
+        p{
+            color: aquamarine;
+            background-color:bisque;
+        }
+        h1{
+            background-color: black;
+            color: azure;
+        }
+        
+        label[for="studentEmail"]::before {
+            content: '@'; /* 在标签前添加 红色'@' 符号 */
+            color: red;}
+            
+            input[type="text"] {
+            color: gray; /* text的文字颜色设置为灰色 */}
+        </style>
+        
     <p> 我最爱妈妈啦啦啦</p>
     <h2>我也喜欢爸爸嘿嘿</h2>
     <p>我和我的爸爸天下第一好</p>
     <h3>我和我的妹妹哈哈哈</h3>
     <p>我和我的妹妹横扫一切阻碍</p>
+    <!--Images-->
+    <img width="50%" scr=""alt="">
+    <!--Lists-->
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <ol type="1" start="10">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+ <!--Table-->
+    <table border="2">
+        <thead>
+            <tr>
+                <th>A1</th>
+                <th>B2</th>
+            </tr>
+            <td>First colune</td>
+            <td>Second colune</td>
+        </thead>
+    </table>
+<!--Forms-->
+<form action="" method="">
+    <!-- <input type="text"> -->
+    <br>
+    <input type="date">
+<!--Forms -> label-->
+<label for="studentId "> Student Id </label>
+<input type="text" name="studentId">
+
+<!--Forms -> button--> 
+<button>
+    sumbit 
+</button>
+<!--Forms -> slsction--> 
+<select name="" id="">
+    <option value="Hedy">Hedy</option>
+    <option value="ly">Lucy</option>
+</select>   
+<!--Forms ->blank hint--> 
+<input placeholder="type your id" type = "t">
+</form>
 
 </body>
 </html>
